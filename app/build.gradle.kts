@@ -1,8 +1,7 @@
 @file:Suppress("DSL_SCOPE_VIOLATION", "UnstableApiUsage")
 
-import com.example.buildlogic.AppConfig
-import com.example.buildlogic.androidApplication
-import com.example.buildlogic.enableCompose
+import package_name.buildlogic.androidApplication
+import package_name.buildlogic.enableCompose
 
 plugins {
     alias(libs.plugins.application)
@@ -17,10 +16,10 @@ plugins {
 apply(from = "../config/jacoco/modules.kts")
 
 androidApplication {
-    namespace = "${AppConfig.APP_PACKAGE_NAME}.feature.template.app"
+    namespace = "package_name.feature.feature_name.app"
 
     defaultConfig {
-        applicationId = "${AppConfig.APP_PACKAGE_NAME}.feature.template.app"
+        applicationId = "package_name.feature.feature_name.app"
         versionCode = 1
         versionName = "1.0.0"
 
@@ -31,7 +30,7 @@ androidApplication {
 }
 
 dependencies {
-    implementation(project(":feature-template"))
+    implementation(project(":feature-feature_name"))
 
     implementation(libs.bundles.kotlin)
     implementation(libs.bundles.android)

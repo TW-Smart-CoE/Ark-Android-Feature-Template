@@ -1,8 +1,10 @@
-package com.example.buildlogic
+@file:Suppress("PackageName", "PackageNaming")
 
-import com.example.buildlogic.MavenConfig.MAVEN_GROUP_ID
+package package_name.buildlogic
+
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.kotlin.dsl.create
+import package_name.buildlogic.MavenConfig.MAVEN_GROUP_ID
 
 fun DependencyHandler.autoImplementation(
     name: String,

@@ -1,4 +1,6 @@
-package com.example.buildlogic
+@file:Suppress("PackageName", "PackageNaming")
+
+package package_name.buildlogic
 
 import org.gradle.api.Project
 

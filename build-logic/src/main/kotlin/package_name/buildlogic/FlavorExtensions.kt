@@ -1,14 +1,16 @@
-package com.example.buildlogic
+@file:Suppress("PackageName", "PackageNaming")
+
+package package_name.buildlogic
 
 import com.android.build.api.variant.AndroidComponentsExtension
 import com.android.build.api.variant.ApplicationAndroidComponentsExtension
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
-import com.example.buildlogic.AppConfig.APP_HOST_KEY
-import com.example.buildlogic.AppConfig.APP_HOST_VALUE
-import com.example.buildlogic.AppConfig.APP_SCHEME_KEY
-import com.example.buildlogic.AppConfig.APP_SCHEME_VALUE
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.findByType
+import package_name.buildlogic.AppConfig.APP_HOST_KEY
+import package_name.buildlogic.AppConfig.APP_HOST_VALUE
+import package_name.buildlogic.AppConfig.APP_SCHEME_KEY
+import package_name.buildlogic.AppConfig.APP_SCHEME_VALUE
 import java.util.Locale.ROOT
 
 enum class FlavorDimension {

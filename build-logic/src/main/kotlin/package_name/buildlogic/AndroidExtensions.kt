@@ -1,6 +1,6 @@
-@file:Suppress("UnstableApiUsage")
+@file:Suppress("UnstableApiUsage", "PackageName", "PackageNaming")
 
-package com.example.buildlogic
+package package_name.buildlogic
 
 import com.android.build.gradle.BaseExtension
 import com.android.build.gradle.LibraryExtension

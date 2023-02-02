@@ -72,7 +72,7 @@ platform :android do
     publishVersion = options[:publishVersion]
 
     gradle(
-      task: ":feature-template:publish",
+      task: ":feature-feature_name:publish",
       properties: {
           "buildEnv" => buildEnv,
           "publishVersion" => publishVersion
@@ -85,7 +85,7 @@ platform :android do
     buildEnv = options[:buildEnv]
     publishVersion = options[:publishVersion]
     gradle(
-      task: ":feature-template-api:publish",
+      task: ":feature-feature_name-api:publish",
       properties: {
           "buildEnv" => buildEnv,
           "publishVersion" => publishVersion

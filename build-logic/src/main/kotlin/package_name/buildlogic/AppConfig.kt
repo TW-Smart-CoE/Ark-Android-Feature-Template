@@ -1,8 +1,8 @@
-package com.example.buildlogic
+@file:Suppress("PackageName", "PackageNaming")
+
+package package_name.buildlogic
 
 object AppConfig {
-    const val APP_PACKAGE_NAME = "com.example"
-
     const val APP_SCHEME_KEY = "APP_SCHEME"
     const val APP_SCHEME_VALUE = "ark"
 

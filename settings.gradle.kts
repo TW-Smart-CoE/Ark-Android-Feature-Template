@@ -40,7 +40,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ARK-Android-Feature-Template"
+rootProject.name = "App_Name-Feature-Feature_Name"
 include(":app")
-include(":feature-template")
-include(":feature-template-api")
+include(":feature-feature_name")
+include(":feature-feature_name-api")

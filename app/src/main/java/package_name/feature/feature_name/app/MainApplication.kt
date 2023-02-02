@@ -1,4 +1,6 @@
-package com.example.feature.template.app
+@file:Suppress("PackageNaming")
+
+package package_name.feature.feature_name.app
 
 import android.app.Application
 import com.thoughtworks.ark.router.Router

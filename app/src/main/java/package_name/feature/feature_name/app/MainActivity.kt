@@ -1,4 +1,6 @@
-package com.example.feature.template.app
+@file:Suppress("PackageNaming")
+
+package package_name.feature.feature_name.app
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

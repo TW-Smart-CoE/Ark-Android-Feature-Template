@@ -1,6 +1,6 @@
-@file:Suppress("TooManyFunctions", "UnstableApiUsage")
+@file:Suppress("TooManyFunctions", "UnstableApiUsage", "PackageName", "PackageNaming")
 
-package com.example.buildlogic
+package package_name.buildlogic
 
 import com.android.build.gradle.BaseExtension
 import com.android.build.gradle.LibraryExtension
@@ -18,8 +18,7 @@ import org.gradle.api.provider.Provider
 import org.gradle.kotlin.dsl.getByType
 import org.gradle.plugin.use.PluginDependency
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
-import java.util.Locale
-import java.util.Properties
+import java.util.*
 
 fun Project.getApp(): BaseAppModuleExtension {
     return extensions.getByType()
