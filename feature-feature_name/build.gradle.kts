@@ -1,6 +1,7 @@
 @file:Suppress("DSL_SCOPE_VIOLATION", "UnstableApiUsage")
 
 import package_name.buildlogic.androidLibrary
+import package_name.buildlogic.autoImplementation
 import package_name.buildlogic.enableCompose
 
 plugins {
@@ -22,6 +23,7 @@ androidLibrary {
 
 dependencies {
     api(project(":feature-feature_name-api"))
+    autoImplementation("ui", "1.0.0")
 
     implementation(libs.core.ktx)
     implementation(libs.material)
@@ -33,8 +35,6 @@ dependencies {
 
     implementation(libs.router)
     kapt(libs.router.compiler)
-
-    api(libs.ark.ui)
 
     testImplementation(libs.junit4)
 
