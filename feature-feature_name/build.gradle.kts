@@ -1,7 +1,6 @@
 @file:Suppress("DSL_SCOPE_VIOLATION", "UnstableApiUsage")
 
 import com.thoughtworks.ark.buildlogic.androidLibrary
-import com.thoughtworks.ark.buildlogic.autoImplementation
 import com.thoughtworks.ark.buildlogic.enableCompose
 
 plugins {
@@ -23,7 +22,6 @@ androidLibrary {
 
 dependencies {
     api(project(":feature-feature_name-api"))
-    autoImplementation("ui", "1.0.0")
 
     implementation(libs.core.ktx)
     implementation(libs.material)
